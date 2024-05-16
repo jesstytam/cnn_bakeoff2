@@ -1,0 +1,114 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_class
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes
+Plotting labels to 10images_yolov8m/fold_1/labels.jpg...
+[codecarbon INFO @ 09:16:07] Energy consumed for RAM : 0.000391 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:16:07] Energy consumed for all GPUs : 0.000317 kWh. Total GPU Power : 75.96600000000001 W
+[codecarbon INFO @ 09:16:07] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:16:07] 0.000885 kWh of electricity used since the beginning.
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m10images_yolov8m/fold_1
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/100        13G      1.251       5.67      1.519         67
+      1/100        13G      1.276        5.6       1.55         73    /home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+      1/100        13G      1.353      5.572      1.572         39
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+      2/100        13G      1.353       5.71      1.578         57
+      2/100        13G      1.259       5.65      1.531         28
+                 Class     Images  Instances      Box(P          R
+  0%|          | 0/4 [00:00<?, ?it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      3/100      13.2G       1.23      5.132      1.481         28
+                 Class     Images  Instances      Box(P          R
+  0%|          | 0/4 [00:00<?, ?it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      4/100      13.2G      1.247      4.028       1.54         62    [codecarbon INFO @ 09:16:22] Energy consumed for RAM : 0.000782 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:16:22] Energy consumed for all GPUs : 0.001215 kWh. Total GPU Power : 215.87400000000002 W
+[codecarbon INFO @ 09:16:22] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:16:22] 0.002351 kWh of electricity used since the beginning.
+      4/100      13.2G      1.113      3.836       1.42         35
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      5/100      13.2G      1.147      3.465      1.426         30
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.107      0.388      0.222      0.183
+      6/100      13.2G       1.15      3.054      1.411         67
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      6/100      13.2G     0.8915      2.766      1.233         28
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      7/100      13.2G      1.069      2.849      1.336         34
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.384      0.185      0.179      0.128
+      8/100      13.2G     0.9907      2.656      1.259         62
+      8/100      13.2G      1.041       2.46      1.296         30
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.956      0.162      0.209      0.155
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/4 [00:00<?, ?it/s][codecarbon INFO @ 09:16:37] Energy consumed for RAM : 0.001174 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:16:37] Energy consumed for all GPUs : 0.001560 kWh. Total GPU Power : 82.62400000000001 W
+[codecarbon INFO @ 09:16:37] Energy consumed for all CPUs : 0.000532 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:16:37] 0.003266 kWh of electricity used since the beginning.
+      9/100      13.2G     0.8983      2.388      1.139         69
+      9/100      13.2G     0.9699      2.504      1.248         25
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     10/100      13.2G      1.013      2.308      1.346         31
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.183      0.478      0.268      0.177
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     11/100      13.2G     0.9746      2.051      1.239         67
+     11/100      13.2G       1.07      2.178      1.337         30
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         28         28      0.385      0.264      0.277      0.188
+     12/100      13.2G     0.8935      1.992      1.259         27
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     13/100      13.2G      0.898      1.729      1.189         56
+                   all         28         28      0.206      0.402      0.261      0.194
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 3, best model saved as best.pt.
+     13/100      13.2G      0.903      1.746      1.212         31
+                 Class     Images  Instances      Box(P          R
+13 epochs completed in 0.012 hours.
+Optimizer stripped from 10images_yolov8m/fold_1/weights/last.pt, 52.0MB
+Optimizer stripped from 10images_yolov8m/fold_1/weights/best.pt, 52.0MB
+Validating 10images_yolov8m/fold_1/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8m summary (fused): 218 layers, 25847866 parameters, 0 gradients, 78.7 GFLOPs
+[codecarbon INFO @ 09:16:52] Energy consumed for RAM : 0.001565 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:16:52] Energy consumed for all GPUs : 0.001960 kWh. Total GPU Power : 95.99000000000001 W
+[codecarbon INFO @ 09:16:52] Energy consumed for all CPUs : 0.000709 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:16:52] 0.004234 kWh of electricity used since the beginning.
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.436       0.32        0.3      0.254
+       Brown Bandicoot         28          2          0          0    0.00127   0.000506
+    Red-necked Wallaby         28          1          0          0          0          0
+      Brushtail Possum         28          2     0.0585        0.5     0.0337     0.0303
+                   Cat         28          2      0.271          1      0.745      0.697
+               Red Fox         28          3     0.0989      0.333      0.168      0.152
+           Rabbit Hare         28          1          0          0     0.0175     0.0122
+ Eastern Grey Kangaroo         28          3      0.121      0.667      0.558      0.558
+               Echidna         28          1          1          0      0.995      0.895
+                   Pig         28          5          1          0     0.0954     0.0725
+                  Euro         28          2      0.123      0.782      0.153      0.142
+           Fallow Deer         28          2          1      0.878      0.995      0.672
+  Long-nosed Bandicoot         28          1          1          0          0          0
+                 Koala         28          3          1          0      0.141     0.0738
+Speed: 0.1ms preprocess, 1.9ms inference, 0.0ms loss, 1.6ms postprocess per image
+Results saved to [1m10images_yolov8m/fold_1

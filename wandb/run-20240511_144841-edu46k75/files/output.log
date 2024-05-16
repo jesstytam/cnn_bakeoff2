@@ -1,0 +1,95 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_class
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes
+Plotting labels to 10images_yolov8x/fold_1/labels.jpg...
+[codecarbon INFO @ 14:48:53] Energy consumed for RAM : 0.000391 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:48:53] Energy consumed for all GPUs : 0.000319 kWh. Total GPU Power : 76.57900000000001 W
+[codecarbon INFO @ 14:48:53] Energy consumed for all CPUs : 0.000178 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:48:53] 0.000888 kWh of electricity used since the beginning.
+  0%|          | 0/1 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 97 weight(decay=0.0), 104 weight(decay=0.001), 103 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m10images_yolov8x/fold_1
+Starting training for 100 epochs...
+  0%|          | 0/1 [00:00<?, ?it/s]/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+  0%|          | 0/1 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/media/jess/DATA/PhD/cnn_bakeoff2/scripts/5_run_yolo.py", line 54, in <module>
+    model.train(data=dataset_yaml,
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/model.py", line 673, in train
+    self.trainer.train()
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 371, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 88, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 266, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 89, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 107, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 128, in _predict_once
+    x = m(x)  # run
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/upsampling.py", line 157, in forward
+    return F.interpolate(input, self.size, self.scale_factor, self.mode, self.align_corners,
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/functional.py", line 4028, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 220.00 MiB. GPU
+Traceback (most recent call last):
+  File "/media/jess/DATA/PhD/cnn_bakeoff2/scripts/5_run_yolo.py", line 54, in <module>
+    model.train(data=dataset_yaml,
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/model.py", line 673, in train
+    self.trainer.train()
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 371, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 88, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 266, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 89, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 107, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 128, in _predict_once
+    x = m(x)  # run
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/upsampling.py", line 157, in forward
+    return F.interpolate(input, self.size, self.scale_factor, self.mode, self.align_corners,
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/functional.py", line 4028, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 220.00 MiB. GPU
+[codecarbon INFO @ 14:49:08] Energy consumed for RAM : 0.000781 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:49:08] Energy consumed for all GPUs : 0.000645 kWh. Total GPU Power : 78.57900000000001 W
+[codecarbon INFO @ 14:49:08] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:49:08] 0.001781 kWh of electricity used since the beginning.
+Exception ignored in: <module 'threading' from '/home/jess/mambaforge/envs/yolov8/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/home/jess/mambaforge/envs/yolov8/lib/python3.10/threading.py", line 1567, in _shutdown
+    lock.acquire()
+KeyboardInterrupt:

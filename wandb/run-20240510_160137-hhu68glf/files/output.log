@@ -1,0 +1,90 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/50_img/2024-05-09_5-Fold_Cross-val/split_3/train/labels.c
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/50_img/2024-05-09_5-Fold_Cross-val/split_3/val/labels.cache
+Plotting labels to 50images_yolov8s/fold_3/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.001), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m50images_yolov8s/fold_3
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/100      30.1G     0.8116      1.254        1.1        235        640:  60%|██████    | 3/5 [00:10<00:05,  2.53s/it]
+      1/100      30.1G     0.8126      1.347      1.127         94        640: 100%|██████████| 5/5 [00:11<00:00,  2.24s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.17
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      2/100      29.9G     0.8267      1.341      1.119        249        640:  40%|████      | 2/5 [00:01<00:02,  1.49it/s]
+      2/100      29.9G     0.8059      1.289      1.095         93        640: 100%|██████████| 5/5 [00:02<00:00,  1.67it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  1.86
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      3/100      30.1G     0.7524      1.227      1.083        241        640:  80%|████████  | 4/5 [00:02<00:00,  1.49it/s]
+                   all        140        140      0.892      0.836      0.924      0.775
+      3/100      30.1G     0.7606      1.214      1.089         97        640: 100%|██████████| 5/5 [00:03<00:00,  1.66it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  1.87
+
+      4/100      30.1G     0.7872      1.193      1.104        266        640:  60%|██████    | 3/5 [00:02<00:01,  1.47it/s]
+      4/100      30.1G     0.7835      1.179      1.093         94        640: 100%|██████████| 5/5 [00:02<00:00,  1.67it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.02
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      5/100      30.1G     0.7673      1.175      1.092         96        640: 100%|██████████| 5/5 [00:02<00:00,  1.75it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.04
+  0%|          | 0/5 [00:00<?, ?it/s]
+
+      6/100      30.1G     0.7549      1.103      1.079        107        640: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.00
+  0%|          | 0/5 [00:00<?, ?it/s]
+                   all        140        140      0.849      0.867      0.922      0.768
+
+      7/100      30.1G     0.7516      1.027       1.08        103        640: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.01
+                   all        140        140      0.697      0.753      0.829      0.683
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/100      30.1G     0.7572      1.006      1.086         80        640: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.24
+                   all        140        140      0.655      0.681      0.736      0.613
+      9/100      30.1G     0.7074     0.8959      1.031        258        640:  20%|██        | 1/5 [00:00<00:02,  1.49it/s]
+      9/100      30.1G     0.7283     0.9796      1.058         92        640: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.06
+  0%|          | 0/5 [00:00<?, ?it/s]
+                   all        140        140       0.84       0.71      0.818      0.669
+
+     10/100      30.1G     0.7298     0.9288      1.063         90        640: 100%|██████████| 5/5 [00:02<00:00,  1.72it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  2.08
+  0%|          | 0/5 [00:00<?, ?it/s]
+                   all        140        140      0.737      0.761      0.826      0.675
+
+     11/100      30.1G     0.7198     0.8724      1.049        105        640: 100%|██████████| 5/5 [00:02<00:00,  1.73it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  1.94
+                   all        140        140      0.728      0.688       0.78      0.623
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 1, best model saved as best.pt.
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+11 epochs completed in 0.050 hours.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]
+Optimizer stripped from 50images_yolov8s/fold_3/weights/last.pt, 22.5MB
+Optimizer stripped from 50images_yolov8s/fold_3/weights/best.pt, 22.5MB
+Validating 50images_yolov8s/fold_3/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  1.82
+                   all        140        140      0.884      0.859      0.954      0.804
+       Brown Bandicoot        140          9      0.755      0.556      0.837      0.501
+    Red-necked Wallaby        140          7      0.777      0.857      0.917      0.863
+      Brushtail Possum        140          6       0.75      0.833      0.913      0.829
+                   Cat        140          8      0.985          1      0.995      0.799
+               Red Fox        140          6      0.829          1      0.995      0.937
+           Rabbit Hare        140         13          1      0.361      0.928      0.658
+                   Dog        140         11          1      0.807      0.976      0.842
+ Eastern Grey Kangaroo        140          8      0.523      0.961        0.9      0.787
+               Echidna        140         15      0.994      0.933      0.948      0.807
+                   Pig        140          8          1      0.854      0.995      0.851
+                  Euro        140         15       0.98          1      0.995      0.882
+           Fallow Deer        140         12      0.934          1      0.995      0.871
+  Long-nosed Bandicoot        140         11          1      0.861      0.988        0.8
+                 Koala        140         11       0.85          1       0.98      0.833
+Speed: 0.1ms preprocess, 1.0ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1m50images_yolov8s/fold_3

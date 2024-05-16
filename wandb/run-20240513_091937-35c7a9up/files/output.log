@@ -1,0 +1,102 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_class
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes
+Plotting labels to 10images_yolov8m/fold_3/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m10images_yolov8m/fold_3
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         28         28      0.589        0.8      0.737      0.577
+      1/100      13.4G      0.999      2.306      1.297         42
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      2/100      13.5G      1.056      2.348       1.33         58
+                   all         28         28       0.56      0.672       0.68       0.58
+      2/100      13.5G      1.011      2.489      1.267         27
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.534      0.834      0.716      0.608
+      3/100      13.8G     0.8455      2.298        1.2         62    [codecarbon INFO @ 09:19:52] Energy consumed for RAM : 0.006261 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:19:52] Energy consumed for all GPUs : 0.006768 kWh. Total GPU Power : 172.459 W
+[codecarbon INFO @ 09:19:52] Energy consumed for all CPUs : 0.002836 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:19:52] 0.015865 kWh of electricity used since the beginning.
+      3/100      13.8G      0.983      2.336      1.249         30
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/4 [00:00<?, ?it/s]
+      4/100      13.8G     0.8986      2.022      1.208         41
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         28         28      0.457      0.681      0.519      0.436
+      5/100      13.7G      0.916      1.835      1.218         32
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      6/100      13.8G      0.864      1.878      1.172         60
+                   all         28         28      0.674      0.438      0.575      0.472
+      6/100      13.8G     0.8383      1.732      1.164         36
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.376      0.748      0.624      0.477
+      7/100      13.8G     0.9193      1.697      1.213         33
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         28         28      0.513      0.683      0.591       0.46
+      8/100      13.7G     0.7837      1.464      1.149         68    [codecarbon INFO @ 09:20:07] Energy consumed for RAM : 0.006652 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:20:07] Energy consumed for all GPUs : 0.007779 kWh. Total GPU Power : 242.77 W
+[codecarbon INFO @ 09:20:07] Energy consumed for all CPUs : 0.003013 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:20:07] 0.017445 kWh of electricity used since the beginning.
+      8/100      13.7G     0.8281       1.48      1.186         30
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      9/100      13.8G     0.8795      1.414      1.138         79
+                   all         28         28      0.402      0.663      0.539      0.432
+      9/100      13.8G     0.8306      1.436      1.147         27
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.658      0.583      0.602      0.461
+     10/100      13.7G     0.8109      1.646      1.129         27
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         28         28       0.51      0.486      0.499      0.334
+     11/100      13.7G     0.8769      1.541      1.228         30
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     12/100      13.7G     0.8872      1.682      1.129         69
+                   all         28         28      0.279      0.336      0.306       0.18
+     12/100      13.7G      0.834      1.553      1.146         27
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.445      0.294      0.305      0.177
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 3, best model saved as best.pt.
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+     13/100      13.8G     0.8623      1.471       1.18         31
+                 Class     Images  Instances      Box(P          R
+13 epochs completed in 0.010 hours.
+Optimizer stripped from 10images_yolov8m/fold_3/weights/last.pt, 52.0MB
+Optimizer stripped from 10images_yolov8m/fold_3/weights/best.pt, 52.0MB
+Validating 10images_yolov8m/fold_3/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8m summary (fused): 218 layers, 25847866 parameters, 0 gradients, 78.7 GFLOPs
+[codecarbon INFO @ 09:20:22] Energy consumed for RAM : 0.007043 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 09:20:22] Energy consumed for all GPUs : 0.008253 kWh. Total GPU Power : 113.668 W
+[codecarbon INFO @ 09:20:22] Energy consumed for all CPUs : 0.003190 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 09:20:22] 0.018486 kWh of electricity used since the beginning.
+                   all         28         28      0.534      0.834      0.716      0.608
+       Brown Bandicoot         28          2      0.442        0.5      0.303      0.226
+    Red-necked Wallaby         28          1      0.164          1      0.497      0.199
+      Brushtail Possum         28          1      0.589          1      0.995      0.895
+                   Cat         28          1          1          0     0.0622     0.0435
+               Red Fox         28          3      0.579          1      0.753      0.656
+           Rabbit Hare         28          3      0.364      0.587      0.426      0.285
+                   Dog         28          2      0.425          1      0.828      0.497
+ Eastern Grey Kangaroo         28          2       0.26          1      0.745      0.621
+               Echidna         28          3      0.735          1      0.995      0.907
+                   Pig         28          2      0.327          1      0.663      0.622
+                  Euro         28          3          1      0.586      0.775      0.738
+           Fallow Deer         28          3      0.528          1      0.995      0.929
+  Long-nosed Bandicoot         28          1      0.902          1      0.995      0.995
+                 Koala         28          1      0.161          1      0.995      0.895
+                 Class     Images  Instances      Box(P          R
+Speed: 0.1ms preprocess, 1.9ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1m10images_yolov8m/fold_3

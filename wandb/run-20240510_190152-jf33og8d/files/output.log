@@ -1,0 +1,345 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/750_img/2024-05-09_5-Fold_Cross-val/split_2/train/labels.
+[34m[1mtrain: [39m[22mNew cache created: /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/750_img/2024-05-09_5-Fold_Cross-val/split_2/train/labels.cache
+
+
+
+
+
+
+
+
+
+
+
+
+
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/750_img/2024-05-09_5-Fold_Cross-val/split_2/val/labels... 1
+
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/750_img/2024-05-09_5-Fold_Cross-val/split_2/val/labels... 2
+[34m[1mval: [39m[22mNew cache created: /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/750_img/2024-05-09_5-Fold_Cross-val/split_2/val/labels.cache
+Plotting labels to 750images_yolov8s/fold_2/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.001), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m750images_yolov8s/fold_2
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      1/100      30.2G     0.5881     0.4647     0.9731        250        640:  98%|█████████▊| 65/66 [05:26<00:04,  4.22s/it]/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+      1/100      30.2G     0.5886     0.4662     0.9737        160        640: 100%|██████████| 66/66 [05:27<00:00,  4.96s/it]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  78%|███████▊  | 7/9 [00:04<00:01,  1.41
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:05<00:00,  1.50
+      2/100      30.2G     0.5638       0.46     0.9461        257        640:   3%|▎         | 2/66 [00:01<00:40,  1.59it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      2/100      30.2G     0.6087     0.4901     0.9769        148        640: 100%|██████████| 66/66 [00:38<00:00,  1.72it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.41
+                   all       2099       2099      0.938      0.918      0.972      0.861
+      3/100      30.2G     0.6009     0.5195     0.9776        255        640:   3%|▎         | 2/66 [00:01<00:39,  1.64it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      3/100      30.2G     0.6367     0.5491     0.9905        153        640: 100%|██████████| 66/66 [00:38<00:00,  1.71it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.41
+                   all       2099       2099      0.891      0.896      0.948      0.819
+      4/100      30.2G     0.6676     0.6236      1.014        254        640:   3%|▎         | 2/66 [00:01<00:39,  1.63it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      4/100      30.2G     0.6637     0.5886      1.003        157        640: 100%|██████████| 66/66 [00:39<00:00,  1.69it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.39
+  0%|          | 0/66 [00:00<?, ?it/s]
+                   all       2099       2099      0.926      0.907       0.96      0.832
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      5/100      30.2G     0.6668     0.5739      1.008        143        640: 100%|██████████| 66/66 [00:39<00:00,  1.65it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.41
+                   all       2099       2099        0.9      0.877      0.942       0.81
+  0%|          | 0/66 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      6/100      30.2G     0.6648     0.5662      1.001        166        640: 100%|██████████| 66/66 [00:39<00:00,  1.65it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.41
+                   all       2099       2099      0.888      0.867      0.929       0.79
+      7/100      30.2G     0.7477     0.6603      1.027        239        640:   2%|▏         | 1/66 [00:00<00:41,  1.57it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      7/100      30.2G     0.6567     0.5486      1.002        162        640: 100%|██████████| 66/66 [00:39<00:00,  1.66it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:06<00:00,  1.39
+                   all       2099       2099      0.929      0.894      0.948      0.812
+      8/100      30.2G     0.6146     0.5519     0.9936        269        640:   3%|▎         | 2/66 [00:01<00:40,  1.60it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      8/100      30.2G     0.6484     0.5428     0.9965        161        640: 100%|██████████| 66/66 [00:39<00:00,  1.69it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:05<00:00,  1.53
+                   all       2099       2099      0.911      0.914      0.957      0.822
+      9/100      30.2G     0.6358     0.5601     0.9939        238        640:   3%|▎         | 2/66 [00:01<00:38,  1.65it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      9/100      30.2G     0.6479     0.5394     0.9934        162        640: 100%|██████████| 66/66 [00:40<00:00,  1.64it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:05<00:00,  1.54
+  0%|          | 0/66 [00:00<?, ?it/s]
+                   all       2099       2099      0.908       0.93      0.964      0.839
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     10/100      30.2G     0.6398     0.5241     0.9853        140        640: 100%|██████████| 66/66 [00:40<00:00,  1.65it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  56%|█████▌    | 5/9 [00:03<00:02,  1.40
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:05<00:00,  1.53
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     11/100      30.2G     0.6278     0.5079     0.9778        149        640: 100%|██████████| 66/66 [00:41<00:00,  1.60it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  56%|█████▌    | 5/9 [00:03<00:02,  1.40
+                   all       2099       2099      0.921        0.9       0.96      0.835
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 1, best model saved as best.pt.
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:05<00:00,  1.54
+11 epochs completed in 0.258 hours.
+Optimizer stripped from 750images_yolov8s/fold_2/weights/last.pt, 22.5MB
+Optimizer stripped from 750images_yolov8s/fold_2/weights/best.pt, 22.5MB
+Validating 750images_yolov8s/fold_2/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8s summary (fused): 168 layers, 11131002 parameters, 0 gradients, 28.5 GFLOPs
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 9/9 [00:07<00:00,  1.21
+                   all       2099       2099       0.95      0.947      0.981       0.89
+       Brown Bandicoot       2099        138      0.856      0.942      0.944      0.785
+    Red-necked Wallaby       2099        156      0.964      0.955       0.99      0.934
+      Brushtail Possum       2099        152      0.987      0.968      0.991      0.931
+                   Cat       2099        158      0.906      0.912      0.966      0.858
+               Red Fox       2099        165      0.975      0.951      0.977       0.91
+           Rabbit Hare       2099        150      0.979      0.922      0.974      0.838
+                   Dog       2099        148      0.921      0.946      0.981      0.916
+ Eastern Grey Kangaroo       2099        123      0.888      0.976       0.98      0.908
+               Echidna       2099        150      0.978      0.973      0.993      0.873
+                   Pig       2099        161       0.95      0.994      0.991       0.93
+                  Euro       2099        145      0.959      0.924      0.977       0.92
+           Fallow Deer       2099        156      0.983      0.981      0.995      0.953
+  Long-nosed Bandicoot       2099        148      0.984      0.834      0.975      0.802
+                 Koala       2099        149      0.967      0.987      0.994      0.899
+Speed: 0.1ms preprocess, 1.0ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1m750images_yolov8s/fold_2

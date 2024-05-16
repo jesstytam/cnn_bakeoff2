@@ -1,0 +1,518 @@
+2024-05-10 14:09:06,504 INFO    StreamThr :4024862 [internal.py:wandb_internal():86] W&B internal server running at pid: 4024862, started at: 2024-05-10 14:09:06.502925
+2024-05-10 14:09:06,507 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status
+2024-05-10 14:09:06,508 INFO    WriterThread:4024862 [datastore.py:open_for_write():87] open: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/run-68sphdgu.wandb
+2024-05-10 14:09:06,513 DEBUG   SenderThread:4024862 [sender.py:send():382] send: header
+2024-05-10 14:09:06,513 DEBUG   SenderThread:4024862 [sender.py:send():382] send: run
+2024-05-10 14:09:07,035 INFO    SenderThread:4024862 [dir_watcher.py:__init__():211] watching files in: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files
+2024-05-10 14:09:07,035 INFO    SenderThread:4024862 [sender.py:_start_run_threads():1136] run started: 68sphdgu with start time 1715314146.013419
+2024-05-10 14:09:07,069 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: check_version
+2024-05-10 14:09:07,070 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: check_version
+2024-05-10 14:09:07,151 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: run_start
+2024-05-10 14:09:07,153 DEBUG   HandlerThread:4024862 [system_info.py:__init__():27] System info init
+2024-05-10 14:09:07,153 DEBUG   HandlerThread:4024862 [system_info.py:__init__():42] System info init done
+2024-05-10 14:09:07,153 INFO    HandlerThread:4024862 [system_monitor.py:start():194] Starting system monitor
+2024-05-10 14:09:07,154 INFO    SystemMonitor:4024862 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-10 14:09:07,154 INFO    HandlerThread:4024862 [system_monitor.py:probe():214] Collecting system info
+2024-05-10 14:09:07,155 INFO    SystemMonitor:4024862 [interfaces.py:start():190] Started cpu monitoring
+2024-05-10 14:09:07,156 INFO    SystemMonitor:4024862 [interfaces.py:start():190] Started disk monitoring
+2024-05-10 14:09:07,158 INFO    SystemMonitor:4024862 [interfaces.py:start():190] Started gpu monitoring
+2024-05-10 14:09:07,161 INFO    SystemMonitor:4024862 [interfaces.py:start():190] Started memory monitoring
+2024-05-10 14:09:07,162 INFO    SystemMonitor:4024862 [interfaces.py:start():190] Started network monitoring
+2024-05-10 14:09:07,198 DEBUG   HandlerThread:4024862 [system_info.py:probe():151] Probing system
+2024-05-10 14:09:07,202 DEBUG   HandlerThread:4024862 [system_info.py:_probe_git():136] Probing git
+2024-05-10 14:09:07,238 DEBUG   HandlerThread:4024862 [system_info.py:_probe_git():144] Probing git done
+2024-05-10 14:09:07,239 DEBUG   HandlerThread:4024862 [system_info.py:probe():199] Probing system done
+2024-05-10 14:09:07,239 DEBUG   HandlerThread:4024862 [system_monitor.py:probe():223] {'os': 'Linux-5.19.0-1010-nvidia-lowlatency-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-05-10T04:09:07.198368', 'startedAt': '2024-05-10T04:09:05.998751', 'docker': None, 'cuda': None, 'args': ('--model', 'yolov8n', '--number_of_images', '50'), 'state': 'running', 'program': '/media/jess/DATA/PhD/cnn_bakeoff2/scripts/5_run_yolo.py', 'codePathLocal': 'scripts/5_run_yolo.py', 'codePath': 'scripts/5_run_yolo.py', 'git': {'remote': 'git@github.com:jesstytam/cnn_bakeoff2.git', 'commit': 'e1c6d59117ce0a5bb1dbba487b7621196f600b01'}, 'email': 'j.tam@unsw.edu.au', 'root': '/media/jess/DATA/PhD/cnn_bakeoff2', 'host': 'tower', 'username': 'jess', 'executable': '/home/jess/mambaforge/envs/yolov8/bin/python', 'cpu_count': 28, 'cpu_count_logical': 56, 'cpu_freq': {'current': 2246.458910714285, 'min': 1000.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 1000.125, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.466, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1046.015, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.381, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.158, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.01, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.181, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.142, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.07, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.013, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.242, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1700.001, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 999.932, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.005, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.047, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.135, 'min': 1000.0, 'max': 4000.0}, {'current': 999.991, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.039, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 2700.0, 'min': 1000.0, 'max': 4000.0}, {'current': 1000.04, 'min': 1000.0, 'max': 4000.0}], 'disk': {'/': {'total': 5558.650802612305, 'used': 368.59759521484375}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 250.3466033935547}}
+2024-05-10 14:09:07,239 INFO    HandlerThread:4024862 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-10 14:09:07,239 INFO    HandlerThread:4024862 [system_monitor.py:probe():227] Publishing system info
+2024-05-10 14:09:07,240 DEBUG   HandlerThread:4024862 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-10 14:09:08,039 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/conda-environment.yaml
+2024-05-10 14:09:10,487 DEBUG   HandlerThread:4024862 [system_info.py:_save_conda():220] Saving conda packages done
+2024-05-10 14:09:10,493 INFO    HandlerThread:4024862 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-10 14:09:10,494 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:09:10,494 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-05-10 14:09:10,508 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-10 14:09:10,509 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: python_packages
+2024-05-10 14:09:10,509 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:09:10,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:09:10,515 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:09:10,819 DEBUG   SenderThread:4024862 [sender.py:send():382] send: telemetry
+2024-05-10 14:09:11,063 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/conda-environment.yaml
+2024-05-10 14:09:11,064 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/requirements.txt
+2024-05-10 14:09:11,065 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:11,065 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-metadata.json
+2024-05-10 14:09:11,353 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/qiyiji6p-wandb-metadata.json
+2024-05-10 14:09:11,628 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:13,099 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:16,733 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:19,483 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:21,670 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:21,910 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:24,945 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:25,511 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:09:25,541 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:09:25,542 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:09:27,486 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:29,168 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:31,203 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:32,523 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:33,248 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:37,529 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:39,429 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/config.yaml
+2024-05-10 14:09:40,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:09:40,511 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:09:40,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:09:41,433 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:41,926 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:41,926 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:43,437 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:43,934 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:44,905 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:44,936 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:09:44,936 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/labels_1_239e5b36cbb2b1e557fd.jpg with policy now
+2024-05-10 14:09:44,936 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:44,965 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:09:44,965 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:44,965 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg with policy now
+2024-05-10 14:09:44,992 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:09:44,992 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:44,992 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg with policy now
+2024-05-10 14:09:45,019 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:09:45,019 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:45,019 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg with policy now
+2024-05-10 14:09:45,097 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:09:45,442 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:45,442 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg
+2024-05-10 14:09:45,443 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg
+2024-05-10 14:09:45,444 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/labels_1_239e5b36cbb2b1e557fd.jpg
+2024-05-10 14:09:45,444 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg
+2024-05-10 14:09:45,445 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images
+2024-05-10 14:09:45,445 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media
+2024-05-10 14:09:46,128 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/8ym9rogm-media/images/labels_1_239e5b36cbb2b1e557fd.jpg
+2024-05-10 14:09:46,557 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/m9ci5y47-media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg
+2024-05-10 14:09:46,669 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/r7vkfekn-media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg
+2024-05-10 14:09:46,722 INFO    wandb-upload_2:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/x7r7lv97-media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg
+2024-05-10 14:09:47,450 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:47,974 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/ao89a37s-media/images/labels_1_239e5b36cbb2b1e557fd.jpg
+2024-05-10 14:09:48,185 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/ne3xqk40-media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg
+2024-05-10 14:09:48,394 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/owwjkcim-media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg
+2024-05-10 14:09:49,021 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:49,596 INFO    wandb-upload_2:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/vwt41p6f-media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg
+2024-05-10 14:09:54,022 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:09:55,486 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:09:55,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:09:55,510 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:09:55,511 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:09:59,783 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:04,784 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:07,162 DEBUG   SystemMonitor:4024862 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-10 14:10:07,166 DEBUG   SenderThread:4024862 [sender.py:send():382] send: stats
+2024-05-10 14:10:10,097 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:10,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:10:10,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:10:10,516 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:10:11,566 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:15,714 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:20,715 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:25,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:10:25,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:10:25,513 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:10:25,629 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:25,793 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:27,424 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:27,429 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:27,429 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:27,430 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:27,431 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:27,638 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:27,638 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:28,233 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:29,647 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:30,380 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:30,381 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:30,382 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:30,382 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:30,383 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:30,652 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:31,197 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:31,550 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:31,657 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:33,259 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:33,260 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:33,260 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:33,261 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:33,261 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:33,666 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:33,667 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:33,952 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:35,676 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:36,005 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:36,008 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:36,009 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:36,009 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:36,010 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:36,680 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:36,707 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:37,063 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:37,167 DEBUG   SenderThread:4024862 [sender.py:send():382] send: stats
+2024-05-10 14:10:37,685 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:38,812 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:38,813 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:38,814 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:38,814 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:38,815 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:39,558 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:39,695 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:39,696 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:40,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:10:40,511 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:10:40,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:10:41,705 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:41,767 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:41,769 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:41,770 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:41,770 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:41,771 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:42,205 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:42,537 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:42,709 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:43,713 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:44,721 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:44,722 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:44,722 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:44,722 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:44,723 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:45,414 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:45,723 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:45,724 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:47,364 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:47,556 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:47,557 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:47,558 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:47,558 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:47,559 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:47,906 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:47,906 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:48,304 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:49,917 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:50,571 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:50,572 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:50,572 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:50,572 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:50,573 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:50,922 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:51,396 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:51,925 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:52,647 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:53,688 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:53,690 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:53,690 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:53,691 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:53,692 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:53,934 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:53,935 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:54,456 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:55,511 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-10 14:10:55,512 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:10:55,512 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: stop_status
+2024-05-10 14:10:55,944 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:56,715 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:56,717 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:56,717 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:56,718 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:56,719 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:56,947 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:57,408 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:57,763 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:10:57,952 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:10:59,508 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:59,510 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:10:59,511 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:10:59,511 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:10:59,512 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:10:59,962 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:10:59,963 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:00,197 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:01,969 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:03,282 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:11:03,979 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:04,915 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:04,981 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:04,981 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:04,981 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/PR_curve_13_c4080f9bdd428542a0eb.png with policy now
+2024-05-10 14:11:04,985 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/PR_curve_13_c4080f9bdd428542a0eb.png
+2024-05-10 14:11:04,987 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images
+2024-05-10 14:11:05,012 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,012 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,013 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg with policy now
+2024-05-10 14:11:05,045 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,045 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,045 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg with policy now
+2024-05-10 14:11:05,114 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,114 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,114 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/F1_curve_13_ccb42ec4a7cf36f65589.png with policy now
+2024-05-10 14:11:05,191 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,192 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,192 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/P_curve_13_dba8a2a13421bea4e569.png with policy now
+2024-05-10 14:11:05,258 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,258 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,259 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/R_curve_13_93babef8d5e88b9dc53b.png with policy now
+2024-05-10 14:11:05,377 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,377 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,378 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png with policy now
+2024-05-10 14:11:05,497 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:05,498 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:05,498 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/confusion_matrix_13_cd1083d2a47f878ea664.png with policy now
+2024-05-10 14:11:05,787 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/gz2bw635-media/images/PR_curve_13_c4080f9bdd428542a0eb.png
+2024-05-10 14:11:05,992 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:05,993 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png
+2024-05-10 14:11:05,994 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg
+2024-05-10 14:11:05,996 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg
+2024-05-10 14:11:05,998 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/P_curve_13_dba8a2a13421bea4e569.png
+2024-05-10 14:11:05,999 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/F1_curve_13_ccb42ec4a7cf36f65589.png
+2024-05-10 14:11:06,001 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/R_curve_13_93babef8d5e88b9dc53b.png
+2024-05-10 14:11:06,002 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/confusion_matrix_13_cd1083d2a47f878ea664.png
+2024-05-10 14:11:06,004 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images
+2024-05-10 14:11:06,375 INFO    wandb-upload_4:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/vmy0ohob-media/images/P_curve_13_dba8a2a13421bea4e569.png
+2024-05-10 14:11:06,416 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/k6aljy54-media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg
+2024-05-10 14:11:06,488 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/w7234xxv-media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg
+2024-05-10 14:11:06,636 INFO    wandb-upload_2:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/78nstkeu-media/images/F1_curve_13_ccb42ec4a7cf36f65589.png
+2024-05-10 14:11:06,785 INFO    wandb-upload_7:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/unjjn76m-media/images/confusion_matrix_13_cd1083d2a47f878ea664.png
+2024-05-10 14:11:06,795 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:06,795 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:06,795 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/images/results_13_d0725a359352b4e77f08.png with policy now
+2024-05-10 14:11:06,814 INFO    wandb-upload_6:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/fc4c31w7-media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png
+2024-05-10 14:11:06,861 INFO    wandb-upload_5:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/ynuwynev-media/images/R_curve_13_93babef8d5e88b9dc53b.png
+2024-05-10 14:11:06,969 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/jvnfnzno-media/images/PR_curve_13_c4080f9bdd428542a0eb.png
+2024-05-10 14:11:07,004 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/results_13_d0725a359352b4e77f08.png
+2024-05-10 14:11:07,005 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images
+2024-05-10 14:11:07,085 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-10 14:11:07,086 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: log_artifact
+2024-05-10 14:11:07,471 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-10 14:11:07,517 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:07,742 INFO    wandb-upload_7:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/dgesal3i-media/images/results_13_d0725a359352b4e77f08.png
+2024-05-10 14:11:07,896 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-10 14:11:07,944 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:07,987 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/d9ho731f-media/images/P_curve_13_dba8a2a13421bea4e569.png
+2024-05-10 14:11:08,013 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json
+2024-05-10 14:11:08,015 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json
+2024-05-10 14:11:08,017 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media
+2024-05-10 14:11:08,017 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table
+2024-05-10 14:11:08,018 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves
+2024-05-10 14:11:08,027 INFO    wandb-upload_4:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/92ipscga-media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg
+2024-05-10 14:11:08,074 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/71d9d8m1-media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg
+2024-05-10 14:11:08,144 INFO    wandb-upload_6:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/kscqwt2k-media/images/confusion_matrix_13_cd1083d2a47f878ea664.png
+2024-05-10 14:11:08,147 INFO    wandb-upload_5:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/qv9ua3wd-media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png
+2024-05-10 14:11:08,300 INFO    SenderThread:4024862 [sender.py:send_request_log_artifact():1470] logged artifact run_68sphdgu_model - {'id': 'QXJ0aWZhY3Q6ODI5NzkyNDA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMjUwOQ==', 'latestArtifact': None}}
+2024-05-10 14:11:08,301 DEBUG   SenderThread:4024862 [sender.py:send():382] send: stats
+2024-05-10 14:11:08,301 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:11:08,303 DEBUG   SenderThread:4024862 [sender.py:send():382] send: config
+2024-05-10 14:11:08,304 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: log_artifact
+2024-05-10 14:11:08,326 INFO    wandb-upload_2:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/p4t4tu0b-media/images/F1_curve_13_ccb42ec4a7cf36f65589.png
+2024-05-10 14:11:08,328 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-10 14:11:08,373 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:08,740 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/py4q6d0r-media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json
+2024-05-10 14:11:08,744 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-10 14:11:08,780 INFO    wandb-upload_4:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/xuxcrwqc-media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json
+2024-05-10 14:11:08,788 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-10 14:11:08,792 INFO    SenderThread:4024862 [sender.py:send_request_log_artifact():1470] logged artifact run-68sphdgu-curvesPrecisionRecallB_table - {'id': 'QXJ0aWZhY3Q6ODI5NzkyNDE5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMjUxNQ==', 'latestArtifact': None}}
+2024-05-10 14:11:08,793 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:08,793 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json with policy now
+2024-05-10 14:11:08,795 DEBUG   SenderThread:4024862 [sender.py:send():382] send: config
+2024-05-10 14:11:08,796 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: log_artifact
+2024-05-10 14:11:08,804 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/1ptlcm1r-media/images/R_curve_13_93babef8d5e88b9dc53b.png
+2024-05-10 14:11:09,030 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json
+2024-05-10 14:11:09,032 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json
+2024-05-10 14:11:09,034 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves
+2024-05-10 14:11:09,236 INFO    SenderThread:4024862 [sender.py:send_request_log_artifact():1470] logged artifact run-68sphdgu-curvesF1ConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODI5NzkyNDI3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMjUyMA==', 'latestArtifact': None}}
+2024-05-10 14:11:09,238 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:09,238 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json with policy now
+2024-05-10 14:11:09,241 DEBUG   SenderThread:4024862 [sender.py:send():382] send: config
+2024-05-10 14:11:09,241 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: log_artifact
+2024-05-10 14:11:09,336 INFO    wandb-upload_7:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/jpazsjla-media/images/results_13_d0725a359352b4e77f08.png
+2024-05-10 14:11:09,471 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/2vgsipco-media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json
+2024-05-10 14:11:09,696 INFO    SenderThread:4024862 [sender.py:send_request_log_artifact():1470] logged artifact run-68sphdgu-curvesPrecisionConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODI5NzkyNDMx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMjUyMQ==', 'latestArtifact': None}}
+2024-05-10 14:11:09,696 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:09,697 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json with policy now
+2024-05-10 14:11:09,699 DEBUG   SenderThread:4024862 [sender.py:send():382] send: config
+2024-05-10 14:11:09,699 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: log_artifact
+2024-05-10 14:11:09,713 INFO    wandb-upload_6:4024862 [upload_job.py:push():89] Uploaded file /home/jess/.local/share/wandb/artifacts/staging/tmpywgy_epe
+2024-05-10 14:11:09,791 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:09,802 INFO    wandb-upload_5:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/n3gzhfd2-media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json
+2024-05-10 14:11:09,803 INFO    wandb-upload_0:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/gywgggzu-media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json
+2024-05-10 14:11:10,107 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/ahjt95b6-media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json
+2024-05-10 14:11:10,135 INFO    wandb-upload_2:4024862 [upload_job.py:push():89] Uploaded file /home/jess/.local/share/wandb/artifacts/staging/tmp57en2jbp
+2024-05-10 14:11:10,148 INFO    SenderThread:4024862 [sender.py:send_request_log_artifact():1470] logged artifact run-68sphdgu-curvesRecallConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODI5NzkyNDM5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMjUyNg==', 'latestArtifact': None}}
+2024-05-10 14:11:10,148 DEBUG   SenderThread:4024862 [sender.py:send():382] send: files
+2024-05-10 14:11:10,148 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json with policy now
+2024-05-10 14:11:10,150 DEBUG   SenderThread:4024862 [sender.py:send():382] send: telemetry
+2024-05-10 14:11:10,150 DEBUG   SenderThread:4024862 [sender.py:send():382] send: exit
+2024-05-10 14:11:10,151 INFO    SenderThread:4024862 [sender.py:send_exit():589] handling exit code: 0
+2024-05-10 14:11:10,151 INFO    SenderThread:4024862 [sender.py:send_exit():591] handling runtime: 121
+2024-05-10 14:11:10,152 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:11:10,153 INFO    SenderThread:4024862 [sender.py:send_exit():597] send defer
+2024-05-10 14:11:10,153 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:10,153 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:10,154 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-10 14:11:10,155 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:10,155 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-10 14:11:10,155 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 1
+2024-05-10 14:11:10,155 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:10,155 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-10 14:11:10,156 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:10,156 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-10 14:11:10,156 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 2
+2024-05-10 14:11:10,156 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:10,157 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-10 14:11:10,157 INFO    HandlerThread:4024862 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-10 14:11:10,158 DEBUG   SystemMonitor:4024862 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-10 14:11:10,158 INFO    HandlerThread:4024862 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-10 14:11:10,158 DEBUG   SystemMonitor:4024862 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-10 14:11:10,159 INFO    HandlerThread:4024862 [interfaces.py:finish():202] Joined disk monitor
+2024-05-10 14:11:10,297 INFO    HandlerThread:4024862 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-10 14:11:10,297 INFO    HandlerThread:4024862 [interfaces.py:finish():202] Joined memory monitor
+2024-05-10 14:11:10,298 INFO    HandlerThread:4024862 [interfaces.py:finish():202] Joined network monitor
+2024-05-10 14:11:10,299 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:10,299 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-10 14:11:10,654 INFO    wandb-upload_4:4024862 [upload_job.py:push():89] Uploaded file /home/jess/.local/share/wandb/artifacts/staging/tmpjz0h__vn
+2024-05-10 14:11:10,792 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:10,847 INFO    wandb-upload_8:4024862 [upload_job.py:push():89] Uploaded file /home/jess/.local/share/wandb/artifacts/staging/tmpzfym23er
+2024-05-10 14:11:11,089 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 3
+2024-05-10 14:11:11,094 DEBUG   SenderThread:4024862 [sender.py:send():382] send: stats
+2024-05-10 14:11:11,094 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:11,094 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:11,095 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-10 14:11:11,099 DEBUG   SenderThread:4024862 [sender.py:send():382] send: history
+2024-05-10 14:11:11,099 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: summary_record
+2024-05-10 14:11:11,101 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:11:11,101 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:11,102 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-10 14:11:11,102 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 4
+2024-05-10 14:11:11,102 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:11,102 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-10 14:11:11,103 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:11,103 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-10 14:11:11,103 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 5
+2024-05-10 14:11:11,103 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:11,103 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-10 14:11:11,105 DEBUG   SenderThread:4024862 [sender.py:send():382] send: summary
+2024-05-10 14:11:11,106 INFO    SenderThread:4024862 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-10 14:11:11,107 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:11,107 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-10 14:11:11,107 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 6
+2024-05-10 14:11:11,108 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:11,108 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-10 14:11:11,108 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:11,109 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-10 14:11:11,114 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: status_report
+2024-05-10 14:11:11,121 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:11:11,308 INFO    wandb-upload_3:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/o2u8fksk-media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json
+2024-05-10 14:11:11,386 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 7
+2024-05-10 14:11:11,387 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:11,387 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-10 14:11:11,388 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:11,388 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-10 14:11:11,796 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:12,130 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/config.yaml
+2024-05-10 14:11:12,131 INFO    Thread-49 :4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:11:12,424 INFO    wandb-upload_5:4024862 [upload_job.py:push():131] Uploaded file /tmp/tmpy2mpyjakwandb/d02vb558-media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json
+2024-05-10 14:11:12,686 INFO    wandb-upload_6:4024862 [upload_job.py:push():89] Uploaded file /home/jess/.local/share/wandb/artifacts/staging/tmph3m0iwas
+2024-05-10 14:11:13,214 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 8
+2024-05-10 14:11:13,214 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:13,214 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:13,215 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-10 14:11:13,216 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:13,216 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-10 14:11:13,216 INFO    SenderThread:4024862 [job_builder.py:build():296] Attempting to build job artifact
+2024-05-10 14:11:13,220 INFO    SenderThread:4024862 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-05-10 14:11:13,224 INFO    SenderThread:4024862 [job_builder.py:build():402] adding wandb-job metadata file
+2024-05-10 14:11:13,248 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 9
+2024-05-10 14:11:13,248 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:13,249 DEBUG   SenderThread:4024862 [sender.py:send():382] send: artifact
+2024-05-10 14:11:13,249 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-10 14:11:13,797 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:13,867 INFO    SenderThread:4024862 [sender.py:send_artifact():1494] sent artifact job-git_github.com_jesstytam_cnn_bakeoff2.git_scripts_5_run_yolo.py - {'id': 'QXJ0aWZhY3Q6ODI5Nzg5NTY0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjgzMTQzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI5Nzg5NTY0', 'versionIndex': 0}}}
+2024-05-10 14:11:13,867 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:13,867 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-10 14:11:13,867 INFO    SenderThread:4024862 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-10 14:11:14,142 INFO    SenderThread:4024862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:14,151 INFO    SenderThread:4024862 [dir_watcher.py:finish():388] scan: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files
+2024-05-10 14:11:14,151 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/conda-environment.yaml conda-environment.yaml
+2024-05-10 14:11:14,153 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/config.yaml config.yaml
+2024-05-10 14:11:14,154 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log output.log
+2024-05-10 14:11:14,155 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/requirements.txt requirements.txt
+2024-05-10 14:11:14,156 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-metadata.json wandb-metadata.json
+2024-05-10 14:11:14,156 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json wandb-summary.json
+2024-05-10 14:11:14,158 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/confusion_matrix_13_cd1083d2a47f878ea664.png media/images/confusion_matrix_13_cd1083d2a47f878ea664.png
+2024-05-10 14:11:14,158 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png media/images/confusion_matrix_normalized_13_ba2a3c5386c9d0d42d4c.png
+2024-05-10 14:11:14,159 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/F1_curve_13_ccb42ec4a7cf36f65589.png media/images/F1_curve_13_ccb42ec4a7cf36f65589.png
+2024-05-10 14:11:14,159 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/labels_1_239e5b36cbb2b1e557fd.jpg media/images/labels_1_239e5b36cbb2b1e557fd.jpg
+2024-05-10 14:11:14,159 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/PR_curve_13_c4080f9bdd428542a0eb.png media/images/PR_curve_13_c4080f9bdd428542a0eb.png
+2024-05-10 14:11:14,159 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/P_curve_13_dba8a2a13421bea4e569.png media/images/P_curve_13_dba8a2a13421bea4e569.png
+2024-05-10 14:11:14,160 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/results_13_d0725a359352b4e77f08.png media/images/results_13_d0725a359352b4e77f08.png
+2024-05-10 14:11:14,160 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/R_curve_13_93babef8d5e88b9dc53b.png media/images/R_curve_13_93babef8d5e88b9dc53b.png
+2024-05-10 14:11:14,160 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg media/images/train_batch0_1_4fc3d106ab1ec28c90ce.jpg
+2024-05-10 14:11:14,161 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg media/images/train_batch1_1_3cd4dcf02b9a0a35a342.jpg
+2024-05-10 14:11:14,161 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg media/images/train_batch2_1_ccb1fdf90ad0c237d06d.jpg
+2024-05-10 14:11:14,161 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg media/images/val_batch0_labels_13_9d4c9a6be9a71d869322.jpg
+2024-05-10 14:11:14,161 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg media/images/val_batch0_pred_13_2c0e67b82364cdce717c.jpg
+2024-05-10 14:11:14,163 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json media/table/curves/F1-Confidence(B)_table_13_64751bb7f52d541843d1.table.json
+2024-05-10 14:11:14,163 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json media/table/curves/Precision-Confidence(B)_table_13_bbc545427f62e666ec5d.table.json
+2024-05-10 14:11:14,163 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json media/table/curves/Precision-Recall(B)_table_13_8df57fe6bf03679d87b3.table.json
+2024-05-10 14:11:14,164 INFO    SenderThread:4024862 [dir_watcher.py:finish():402] scan save: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json media/table/curves/Recall-Confidence(B)_table_13_12aece1111bad6a58586.table.json
+2024-05-10 14:11:14,164 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 10
+2024-05-10 14:11:14,164 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:14,164 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:14,165 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-10 14:11:14,165 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:14,166 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-05-10 14:11:14,166 INFO    SenderThread:4024862 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-10 14:11:14,799 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:14,800 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:15,122 INFO    wandb-upload_8:4024862 [upload_job.py:push():131] Uploaded file /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/wandb-summary.json
+2024-05-10 14:11:15,146 INFO    wandb-upload_2:4024862 [upload_job.py:push():131] Uploaded file /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/config.yaml
+2024-05-10 14:11:15,149 INFO    wandb-upload_1:4024862 [upload_job.py:push():131] Uploaded file /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/conda-environment.yaml
+2024-05-10 14:11:15,167 INFO    wandb-upload_7:4024862 [upload_job.py:push():131] Uploaded file /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/output.log
+2024-05-10 14:11:15,169 INFO    wandb-upload_4:4024862 [upload_job.py:push():131] Uploaded file /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/files/requirements.txt
+2024-05-10 14:11:15,369 INFO    Thread-48 (_thread_body):4024862 [sender.py:transition_state():617] send defer: 11
+2024-05-10 14:11:15,370 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:15,370 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-10 14:11:15,371 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:15,372 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-05-10 14:11:15,372 INFO    SenderThread:4024862 [file_pusher.py:join():181] waiting for file pusher
+2024-05-10 14:11:15,372 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 12
+2024-05-10 14:11:15,372 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:15,373 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-10 14:11:15,373 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:15,373 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-05-10 14:11:15,373 INFO    SenderThread:4024862 [file_stream.py:finish():595] file stream finish called
+2024-05-10 14:11:15,800 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:16,018 INFO    SenderThread:4024862 [file_stream.py:finish():599] file stream finish is done
+2024-05-10 14:11:16,019 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 13
+2024-05-10 14:11:16,019 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:16,019 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:16,020 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-10 14:11:16,021 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:16,021 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-05-10 14:11:16,021 INFO    SenderThread:4024862 [sender.py:transition_state():617] send defer: 14
+2024-05-10 14:11:16,022 DEBUG   SenderThread:4024862 [sender.py:send():382] send: final
+2024-05-10 14:11:16,022 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: defer
+2024-05-10 14:11:16,022 DEBUG   SenderThread:4024862 [sender.py:send():382] send: footer
+2024-05-10 14:11:16,022 INFO    HandlerThread:4024862 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-10 14:11:16,023 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: defer
+2024-05-10 14:11:16,023 INFO    SenderThread:4024862 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-05-10 14:11:16,025 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-10 14:11:16,025 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: poll_exit
+2024-05-10 14:11:16,027 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-10 14:11:16,029 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: server_info
+2024-05-10 14:11:16,029 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: server_info
+2024-05-10 14:11:16,070 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-10 14:11:16,071 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-10 14:11:16,072 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: job_info
+2024-05-10 14:11:16,228 DEBUG   SenderThread:4024862 [sender.py:send_request():409] send_request: job_info
+2024-05-10 14:11:16,230 DEBUG   HandlerThread:4024862 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-10 14:11:16,230 INFO    HandlerThread:4024862 [handler.py:finish():869] shutting down handler
+2024-05-10 14:11:17,074 INFO    WriterThread:4024862 [datastore.py:close():296] close: /media/jess/DATA/PhD/cnn_bakeoff2/wandb/run-20240510_140905-68sphdgu/run-68sphdgu.wandb
+2024-05-10 14:11:17,228 INFO    SenderThread:4024862 [sender.py:finish():1572] shutting down sender
+2024-05-10 14:11:17,229 INFO    SenderThread:4024862 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-10 14:11:17,229 INFO    SenderThread:4024862 [file_pusher.py:join():181] waiting for file pusher
