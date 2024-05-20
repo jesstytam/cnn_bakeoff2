@@ -24,10 +24,10 @@ args = parser.parse_args()
 
 print('Generating dataset.')
 
-dataset_path = Path(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/') # replace with 'path/to/dataset' for your custom data
+dataset_path = Path(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/{args.number_of_images}_img/') # replace with 'path/to/dataset' for your custom data
 labels = sorted(dataset_path.rglob("*labels/*.txt")) # all data in 'labels'
 
-yaml_file = '/media/jess/DATA/PhD/cnn_bakeoff2/yolo/config/trial_1.yaml'  # your data YAML with data directories and names dictionary
+yaml_file = '/media/jess/DATA/PhD/cnn_bakeoff2/yolo/config/trial_aug.yaml'  # your data YAML with data directories and names dictionary
 with open(yaml_file, 'r', encoding="utf8") as y:
     classes = yaml.safe_load(y)['names']
 cls_idx = sorted(classes.keys())
@@ -148,8 +148,5 @@ def dataset_summary_b(path):
 
     return dict(sorted(classes_dict.items()))
 
-print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/2024-05-09_5-Fold_Cross-val/split_1/train/labels'))
-print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/2024-05-09_5-Fold_Cross-val/split_2/train/labels'))
-print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/2024-05-09_5-Fold_Cross-val/split_3/train/labels'))
-print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/2024-05-09_5-Fold_Cross-val/split_4/train/labels'))
-print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{args.number_of_images}_img/2024-05-09_5-Fold_Cross-val/split_5/train/labels'))
+for num in range(1, 5):
+    print(dataset_summary_b(f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/{args.number_of_images}_img/2024-05-21_5-Fold_Cross-val/split_{num}/train/labels'))

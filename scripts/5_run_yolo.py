@@ -35,7 +35,7 @@ model = YOLO(f'{args.model}.yaml').load(f'{args.model}.pt')
 ksplit = 5
 results = {}
 
-number_of_images = [1000]
+number_of_images = [10, 20, 50, 100]
 
 #run models
 for num in number_of_images:
