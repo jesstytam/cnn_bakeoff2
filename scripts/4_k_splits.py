@@ -43,7 +43,7 @@ for label in labels:
 
     for l in lines:
         # classes for YOLO label uses integer at first position of each line
-        lbl_counter[int(l.split(' ')[0])] += 1
+        lbl_counter[int(float(l.split(' ')[0]))] += 1
 
     # labels_df.loc[label.stem] = lbl_counter
     labels_df.loc[label.stem] = [lbl_counter[cls] for cls in classes]

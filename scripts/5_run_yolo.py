@@ -48,7 +48,7 @@ for num in number_of_images:
 
         print(f'Running model for split {k+1}...')
 
-        ds_yaml = f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/{num}_img/2024-05-09_5-Fold_Cross-val/split_{k+1}/split_{k+1}_dataset.yaml'
+        ds_yaml = f'/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/{num}_img/2024-05-21_5-Fold_Cross-val/split_{k+1}/split_{k+1}_dataset.yaml'
         dataset_yaml = ds_yaml
 
         model.train(data=dataset_yaml,
@@ -59,7 +59,7 @@ for num in number_of_images:
                     patience=10,
                     plots=True,
                     name=f'fold_{k+1}', #name of sub-folder
-                    project=f'{num}images_{args.model}')  #name of parent folder
+                    project=f'{num}images_{args.model}_1xaug')  #name of parent folder
         
         results[k+1] = model.metrics  # save output metrics for further analysis
         print('... done!')

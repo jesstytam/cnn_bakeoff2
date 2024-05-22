@@ -1,0 +1,205 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/5
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/50_
+Plotting labels to 50images_yolov8x_1xaug/fold_3/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 97 weight(decay=0.0), 104 weight(decay=0.0005), 103 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m50images_yolov8x_1xaug/fold_3
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+      1/100      48.5G      1.089      2.065       1.48         78        640
+                 Class     Images  Instances      Box(P          R      mAP50/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+                   all        280        280      0.475      0.568      0.517       0.34
+                 Class     Images  Instances      Box(P          R      mAP50
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+      2/100      49.4G      1.115      1.941      1.489         59        640
+                   all        280        280      0.372      0.302      0.284       0.18
+                 Class     Images  Instances      Box(P          R      mAP50
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+      3/100      49.3G      1.143      2.061      1.509         76        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280      0.261      0.311      0.133     0.0822
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+      4/100      49.3G      1.278      2.215      1.616         56        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280     0.0981      0.369     0.0681     0.0318
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+      5/100      49.3G      1.353      2.352      1.649         61        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280    0.00171      0.222    0.00138   0.000549
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+      6/100      49.3G      1.425      2.439      1.703         73        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280     0.0593      0.196     0.0293     0.0189
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+      7/100      49.3G       1.46      2.469      1.725         64        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280     0.0886      0.279     0.0697     0.0363
+  0%|          | 0/18 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+      8/100      49.3G      1.412      2.402      1.694         57        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280      0.132      0.216     0.0463     0.0247
+  0%|          | 0/18 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+      9/100      49.3G      1.362      2.261      1.639         70        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280      0.107      0.198     0.0737     0.0411
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+     10/100      49.3G      1.352      2.187       1.65         59        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280        0.6      0.136      0.103     0.0544
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+     11/100      49.3G      1.321      2.088      1.609         62        640
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280      0.182      0.208      0.132      0.062
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 1, best model saved as best.pt.
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+11 epochs completed in 0.126 hours.
+Optimizer stripped from 50images_yolov8x_1xaug/fold_3/weights/last.pt, 136.7MB
+Optimizer stripped from 50images_yolov8x_1xaug/fold_3/weights/best.pt, 136.7MB
+Validating 50images_yolov8x_1xaug/fold_3/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8x summary (fused): 268 layers, 68137050 parameters, 0 gradients, 257.5 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50
+                   all        280        280      0.477      0.569      0.517      0.341
+       Brown Bandicoot        280         16      0.389        0.5      0.262      0.183
+    Red-necked Wallaby        280         16      0.164      0.625      0.188      0.152
+      Brushtail Possum        280         27      0.564      0.778      0.668      0.512
+                   Cat        280         13      0.847      0.308      0.394      0.153
+               Red Fox        280         18      0.479      0.722      0.622      0.485
+           Rabbit Hare        280         25      0.692       0.08      0.493      0.242
+                   Dog        280         24      0.414      0.472      0.475      0.296
+ Eastern Grey Kangaroo        280         25      0.249       0.44       0.19      0.135
+               Echidna        280         14      0.709      0.869      0.911      0.567
+                   Pig        280         21      0.413      0.571      0.595      0.455
+                  Euro        280         24      0.368      0.792      0.589       0.43
+           Fallow Deer        280         21      0.311      0.905      0.886      0.579
+  Long-nosed Bandicoot        280         13      0.318      0.253      0.204        0.1
+                 Koala        280         23      0.756      0.652      0.758      0.484
+Speed: 0.1ms preprocess, 5.6ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1m50images_yolov8x_1xaug/fold_3

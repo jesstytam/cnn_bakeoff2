@@ -1,0 +1,110 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mNew cache created: /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/10_img/2024-05-21_5-Fold_Cross-val/split_4/train/labels.cache
+[34m[1mval: [39m[22mNew cache created: /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/10_img/2024-05-21_5-Fold_Cross-val/split_4/val/labels.cache
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/10_img/2024-05-21_5-F[codecarbon INFO @ 14:37:44] Energy consumed for RAM : 0.007435 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:37:44] Energy consumed for all GPUs : 0.008214 kWh. Total GPU Power : 74.248 W
+[codecarbon INFO @ 14:37:44] Energy consumed for all CPUs : 0.003369 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:37:44] 0.019018 kWh of electricity used since the beginning.
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/10_img/2024-05-21_5-F
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes_1x/10_img/2024-05-21_5-Fol
+Plotting labels to 10images_yolov8n_1xaug/fold_4/labels.jpg...
+  0%|          | 0/4 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m10images_yolov8n_1xaug/fold_4
+Starting training for 100 epochs...
+      1/100      9.04G     0.9573      2.461      1.253         76        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|  /home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+[codecarbon INFO @ 14:37:59] Energy consumed for RAM : 0.007826 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:37:59] Energy consumed for all GPUs : 0.008617 kWh. Total GPU Power : 96.805 W
+[codecarbon INFO @ 14:37:59] Energy consumed for all CPUs : 0.003546 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:37:59] 0.019989 kWh of electricity used since the beginning.
+[codecarbon INFO @ 14:38:14] Energy consumed for RAM : 0.008217 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:38:14] Energy consumed for all GPUs : 0.008812 kWh. Total GPU Power : 46.854 W
+[codecarbon INFO @ 14:38:14] Energy consumed for all CPUs : 0.003723 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:38:14] 0.020752 kWh of electricity used since the beginning.
+[codecarbon INFO @ 14:38:29] Energy consumed for RAM : 0.008608 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:38:29] Energy consumed for all GPUs : 0.008990 kWh. Total GPU Power : 42.759 W
+[codecarbon INFO @ 14:38:29] Energy consumed for all CPUs : 0.003900 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:38:29] 0.021498 kWh of electricity used since the beginning.
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         56         56      0.693      0.654       0.76       0.65
+      2/100      9.04G      1.009      2.545      1.319        143        640:  50%|█████     | 2
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      2/100      9.04G     0.9856      2.474      1.286         66        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+      3/100      9.03G     0.9224        2.4       1.24         67        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         56         56      0.588      0.664      0.756       0.62
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+      4/100      9.03G     0.9605      2.368      1.244         71        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+                   all         56         56      0.691      0.683      0.743      0.602
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      5/100      9.03G     0.8967      2.281      1.224         72        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+  0%|          | 0/4 [00:00<?, ?it/s]
+                   all         56         56      0.636      0.695      0.749      0.615
+      6/100      9.03G     0.9353      2.344      1.263         55        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+  0%|          | 0/4 [00:00<?, ?it/s]
+                   all         56         56       0.69      0.657      0.739      0.595
+      7/100      9.03G     0.9063      2.266      1.234         71        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+      8/100      9.03G     0.9715       2.27      1.246        135        640:  50%|█████     | 2
+                   all         56         56      0.613      0.638      0.673      0.546
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/100      9.03G     0.9832      2.275      1.261         71        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+[codecarbon INFO @ 14:38:44] Energy consumed for RAM : 0.008999 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 14:38:44] Energy consumed for all GPUs : 0.009860 kWh. Total GPU Power : 208.931 W
+[codecarbon INFO @ 14:38:44] Energy consumed for all CPUs : 0.004077 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 14:38:44] 0.022936 kWh of electricity used since the beginning.
+      9/100      9.03G     0.9439      2.195      1.248         47        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         56         56      0.566      0.588      0.668      0.531
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     10/100      9.03G     0.8805      2.156      1.197         64        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+                   all         56         56      0.507      0.559      0.607      0.504
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     11/100      9.03G     0.9094      2.011      1.185         87        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+     12/100      9.03G     0.8743      1.928      1.166        131        640:  25%|██▌       | 1
+                   all         56         56      0.546      0.507      0.612      0.469
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 2, best model saved as best.pt.
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+12 epochs completed in 0.017 hours.
+Optimizer stripped from 10images_yolov8n_1xaug/fold_4/weights/last.pt, 6.2MB
+Optimizer stripped from 10images_yolov8n_1xaug/fold_4/weights/best.pt, 6.2MB
+Validating 10images_yolov8n_1xaug/fold_4/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+     12/100      9.03G     0.8903      2.071      1.201         72        640: 100%|██████████| 4
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██
+                   all         56         56      0.693      0.655       0.76      0.649
+       Brown Bandicoot         56          5      0.615      0.337       0.53      0.475
+    Red-necked Wallaby         56          5      0.272      0.163      0.378        0.3
+      Brushtail Possum         56          4      0.729        0.5      0.638      0.533
+                   Cat         56          6      0.696        0.5      0.611      0.356
+               Red Fox         56          3      0.749          1      0.995       0.83
+           Rabbit Hare         56          3          1          0      0.599      0.539
+                   Dog         56          5          1      0.392      0.666      0.509
+ Eastern Grey Kangaroo         56          1       0.52          1      0.995      0.995
+               Echidna         56          5      0.874          1      0.995      0.862
+                   Pig         56          3      0.312      0.667      0.501      0.401
+                  Euro         56          4      0.846          1      0.995      0.914
+           Fallow Deer         56          4      0.776          1      0.995      0.908
+  Long-nosed Bandicoot         56          4      0.761          1      0.995      0.864
+                 Koala         56          4      0.547      0.616      0.745      0.596
+Speed: 0.1ms preprocess, 0.6ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1m10images_yolov8n_1xaug/fold_4

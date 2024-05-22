@@ -1,0 +1,241 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_class
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes
+Plotting labels to 100images_yolov8l_1xaug/fold_4/labels.jpg...
+  0%|          | 0/35 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 97 weight(decay=0.0), 104 weight(decay=0.0005), 103 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m100images_yolov8l_1xaug/fold_4
+Starting training for 100 epochs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      1/100      39.9G      1.083      1.679      1.427        136
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.618      0.503      0.564      0.373
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+      2/100      39.6G      1.196       1.87      1.518        124
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.267       0.18     0.0981     0.0492
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      3/100      39.6G      1.353      2.214      1.652        122
+                 Class     Images  Instances      Box(P          R
+                   all        560        560     0.0388       0.17    0.00908    0.00321
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      4/100      39.2G      1.474      2.381      1.714        133
+                 Class     Images  Instances      Box(P          R
+                   all        560        560       0.26      0.273      0.132     0.0783
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      5/100      39.6G      1.431      2.249      1.686        144
+                 Class     Images  Instances      Box(P          R
+                   all        560        560        0.2       0.35       0.15     0.0888
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      6/100      39.6G      1.349      2.099      1.644        119
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.305      0.277      0.206      0.112
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      7/100      39.2G       1.34      2.056      1.632        121
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.302      0.406      0.289       0.18
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      8/100      39.6G      1.305          2      1.595        122
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.466      0.444      0.417      0.265
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      9/100      39.6G      1.267      1.929      1.573        131
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.395      0.376      0.316      0.197
+  0%|          | 0/35 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     10/100      39.2G      1.216      1.771      1.541        109
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.527      0.457       0.47       0.32
+     11/100      39.6G      1.226      1.733      1.513        136
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     11/100      39.6G      1.204      1.769      1.548        134
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.476      0.473      0.462      0.312
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 1, best model saved as best.pt.
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+11 epochs completed in 0.148 hours.
+Optimizer stripped from 100images_yolov8l_1xaug/fold_4/weights/last.pt, 87.7MB
+Optimizer stripped from 100images_yolov8l_1xaug/fold_4/weights/best.pt, 87.7MB
+Validating 100images_yolov8l_1xaug/fold_4/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8l summary (fused): 268 layers, 43617402 parameters, 0 gradients, 164.9 GFLOPs
+                 Class     Images  Instances      Box(P          R
+                   all        560        560      0.588      0.527       0.56      0.372
+       Brown Bandicoot        560         34          1      0.106      0.341      0.209
+    Red-necked Wallaby        560         40      0.468      0.575      0.499      0.286
+      Brushtail Possum        560         38       0.37      0.789      0.627      0.493
+                   Cat        560         42       0.73      0.619      0.661      0.379
+               Red Fox        560         44      0.593      0.409      0.501      0.394
+           Rabbit Hare        560         45      0.356      0.511      0.493      0.284
+                   Dog        560         40      0.601        0.6      0.653      0.419
+ Eastern Grey Kangaroo        560         41      0.274      0.175      0.306       0.19
+               Echidna        560         45      0.747      0.667      0.698      0.537
+                   Pig        560         43      0.787      0.442      0.523      0.371
+                  Euro        560         35      0.293      0.771      0.637      0.482
+           Fallow Deer        560         41      0.512      0.683      0.691      0.469
+  Long-nosed Bandicoot        560         41      0.679      0.415      0.497      0.256
+                 Koala        560         31      0.818      0.613      0.713      0.437
+Speed: 0.1ms preprocess, 3.4ms inference, 0.0ms loss, 0.8ms postprocess per image
+Results saved to [1m100images_yolov8l_1xaug/fold_4
