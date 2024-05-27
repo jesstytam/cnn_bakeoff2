@@ -1,0 +1,154 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+[34m[1mtrain: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_class
+[34m[1mval: [39m[22mScanning /media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes
+[34m[1mAMP: [39m[22mchecks passed ✅
+Plotting labels to 10images_yolov8x_1xaug/fold_1/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000556, momentum=0.9) with parameter groups 97 weight(decay=0.0), 104 weight(decay=0.0005), 103 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1m10images_yolov8x_1xaug/fold_1
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/2 [00:00<?, ?it/s][codecarbon INFO @ 15:19:52] Energy consumed for RAM : 0.000391 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:19:52] Energy consumed for all GPUs : 0.000334 kWh. Total GPU Power : 80.152 W
+[codecarbon INFO @ 15:19:52] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:19:52] 0.000902 kWh of electricity used since the beginning.
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+      1/100      48.6G       1.35      5.489       1.68        106
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.517      0.154     0.0958     0.0817
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      2/100      48.6G      1.222      5.704      1.583         93
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.594      0.154     0.0969     0.0823
+  0%|          | 0/2 [00:00<?, ?it/s]
+      3/100      48.6G      1.249      5.548      1.693        125    [codecarbon INFO @ 15:20:07] Energy consumed for RAM : 0.000782 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:20:07] Energy consumed for all GPUs : 0.001535 kWh. Total GPU Power : 288.49 W
+[codecarbon INFO @ 15:20:07] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:20:07] 0.002672 kWh of electricity used since the beginning.
+                   all         28         28      0.598       0.15     0.0963      0.082
+      3/100      48.6G      1.174      5.748      1.584         84
+                 Class     Images  Instances      Box(P          R
+  0%|          | 0/2 [00:00<?, ?it/s]
+
+      4/100      48.7G      1.207      5.316      1.603        122
+      4/100      48.7G      1.244      5.508      1.613         98
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      5/100      49.2G      1.173      4.646      1.591        101
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.384      0.325       0.17      0.154
+[codecarbon INFO @ 15:20:22] Energy consumed for RAM : 0.001173 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:20:22] Energy consumed for all GPUs : 0.001966 kWh. Total GPU Power : 103.319 W
+[codecarbon INFO @ 15:20:22] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:20:22] 0.003670 kWh of electricity used since the beginning.
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      6/100      48.7G      1.251      4.099       1.63         89
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.404      0.261      0.221      0.186
+  0%|          | 0/2 [00:00<?, ?it/s][codecarbon INFO @ 15:20:37] Energy consumed for RAM : 0.001564 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:20:37] Energy consumed for all GPUs : 0.002367 kWh. Total GPU Power : 96.28 W
+[codecarbon INFO @ 15:20:37] Energy consumed for all CPUs : 0.000709 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:20:37] 0.004639 kWh of electricity used since the beginning.
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      7/100      49.2G      1.057       3.41      1.449         78
+                   all         28         28      0.475      0.368      0.325      0.242
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/100      49.2G      1.052      2.963      1.399         87
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.217      0.324      0.252      0.193
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/2 [00:00<?, ?it/s][codecarbon INFO @ 15:20:52] Energy consumed for RAM : 0.001955 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:20:52] Energy consumed for all GPUs : 0.002758 kWh. Total GPU Power : 93.961 W
+[codecarbon INFO @ 15:20:52] Energy consumed for all CPUs : 0.000887 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:20:52] 0.005600 kWh of electricity used since the beginning.
+      9/100      49.2G     0.9322      2.678      1.328        150
+      9/100      49.2G      1.001      2.777      1.421         97
+                 Class     Images  Instances      Box(P          R
+  0%|          | 0/2 [00:00<?, ?it/s]
+     10/100      49.2G     0.9541      2.765      1.328        131    [codecarbon INFO @ 15:21:07] Energy consumed for RAM : 0.002343 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:21:07] Energy consumed for all GPUs : 0.003972 kWh. Total GPU Power : 293.446 W
+[codecarbon INFO @ 15:21:07] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:21:07] 0.007379 kWh of electricity used since the beginning.
+                   all         28         28     0.0957      0.396      0.178      0.118
+     10/100      49.2G     0.9502      2.749      1.301         83
+                 Class     Images  Instances      Box(P          R
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     11/100      49.3G     0.9289      2.477      1.236         97
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.242      0.362      0.202      0.138
+  0%|          | 0/2 [00:00<?, ?it/s]
+     12/100      49.3G     0.9296       2.38      1.307        102
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.292      0.267      0.167      0.117
+[codecarbon INFO @ 15:21:22] Energy consumed for RAM : 0.002734 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:21:22] Energy consumed for all GPUs : 0.004931 kWh. Total GPU Power : 230.154 W
+[codecarbon INFO @ 15:21:22] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:21:22] 0.008906 kWh of electricity used since the beginning.
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     13/100      49.2G     0.8538      2.317      1.245         96
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.534      0.228      0.142      0.101
+  0%|          | 0/2 [00:00<?, ?it/s]
+     14/100      49.2G     0.9025      2.291      1.278        103
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.385      0.249      0.253      0.193
+[codecarbon INFO @ 15:21:37] Energy consumed for RAM : 0.003125 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:21:37] Energy consumed for all GPUs : 0.005397 kWh. Total GPU Power : 111.851 W
+[codecarbon INFO @ 15:21:37] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:21:37] 0.009939 kWh of electricity used since the beginning.
+  0%|          | 0/2 [00:00<?, ?it/s]
+
+     15/100      48.7G     0.8538      1.984      1.234         81
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.282      0.221      0.213       0.15
+  0%|          | 0/2 [00:00<?, ?it/s]
+     16/100      49.2G     0.8855      1.885      1.257         97
+                 Class     Images  Instances      Box(P          R
+                   all         28         28       0.21      0.369      0.296      0.209
+[codecarbon INFO @ 15:21:52] Energy consumed for RAM : 0.003516 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:21:52] Energy consumed for all GPUs : 0.005818 kWh. Total GPU Power : 101.114 W
+[codecarbon INFO @ 15:21:52] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:21:52] 0.010928 kWh of electricity used since the beginning.
+  0%|          | 0/2 [00:00<?, ?it/s]
+
+     17/100      49.2G     0.8088      1.658      1.158        131
+                   all         28         28      0.322      0.285       0.33      0.218
+[34m[1mEarlyStopping: [39m[22mTraining stopped early as no improvement observed in last 10 epochs. Best results observed at epoch 7, best model saved as best.pt.
+     17/100      49.2G     0.8412      1.836      1.186         92
+                 Class     Images  Instances      Box(P          R
+17 epochs completed in 0.036 hours.
+Optimizer stripped from 10images_yolov8x_1xaug/fold_1/weights/last.pt, 136.7MB
+Optimizer stripped from 10images_yolov8x_1xaug/fold_1/weights/best.pt, 136.7MB
+Validating 10images_yolov8x_1xaug/fold_1/weights/best.pt...
+Ultralytics YOLOv8.2.11 🚀 Python-3.10.13 torch-2.3.0+cu121 CUDA:0 (NVIDIA RTX A6000, 48669MiB)
+YOLOv8x summary (fused): 268 layers, 68137050 parameters, 0 gradients, 257.5 GFLOPs
+/home/jess/mambaforge/envs/yolov8/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+                 Class     Images  Instances      Box(P          R
+                   all         28         28      0.475      0.368      0.327      0.243
+       Brown Bandicoot         28          2      0.303      0.455      0.167      0.134
+    Red-necked Wallaby         28          1     0.0794          1      0.497      0.448
+      Brushtail Possum         28          2      0.252        0.5      0.557      0.384
+                   Cat         28          2      0.256          1      0.663       0.58
+               Red Fox         28          3          1          0      0.117     0.0812
+           Rabbit Hare         28          1          1          0          0          0
+ Eastern Grey Kangaroo         28          3       0.31      0.333      0.219      0.171
+               Echidna         28          1      0.898          1      0.995      0.796
+                   Pig         28          5          0          0       0.18      0.117
+                  Euro         28          2     0.0737        0.5      0.133      0.119
+           Fallow Deer         28          2          0          0      0.256      0.142
+  Long-nosed Bandicoot         28          1          1          0     0.0237      0.019
+                 Koala         28          3          1          0      0.439      0.168
+[codecarbon INFO @ 15:22:07] Energy consumed for RAM : 0.003907 kWh. RAM Power : 93.87997627258302 W
+[codecarbon INFO @ 15:22:07] Energy consumed for all GPUs : 0.006225 kWh. Total GPU Power : 97.736 W
+[codecarbon INFO @ 15:22:07] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 15:22:07] 0.011903 kWh of electricity used since the beginning.
+Speed: 0.1ms preprocess, 4.7ms inference, 0.0ms loss, 2.3ms postprocess per image
+Results saved to [1m10images_yolov8x_1xaug/fold_1
