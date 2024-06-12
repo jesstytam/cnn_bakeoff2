@@ -2,12 +2,12 @@ import os
 import random
 import shutil
 
+random.seed(42)
 categories = [0, 2, 3, 6, 7, 8, 10, 11, 14, 15, 16, 17, 19, 22]
 
 all_labels_dir = '/media/jess/DATA/PhD/data/ecoflow/yolo_labels/26_classes/labels'
 train_labels_dir = '/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/train/labels/'
 # test_labels_dir = '/media/jess/DATA/PhD/data/ecoflow/yolo_labels/14_classes/test/labels/'
-random.seed(42)
 
 #copy labels
 print('Copying labels to training folder...')

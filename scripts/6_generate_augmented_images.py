@@ -7,7 +7,7 @@ from PIL import Image
 
 #setup loop
 random.seed(666)
-number_of_images = [10, 20, 50, 100]
+number_of_images = [250, 500, 750, 1000]
 splits = [1, 2, 3, 4, 5]
 
 for num in number_of_images:
